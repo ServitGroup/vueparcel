@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue Parcel Module</title>
-    <script src="./dist/vendor.js"></script>
     <style>
         [v-cloak]>* {
             display: none;
@@ -20,6 +19,7 @@
 
 <body>
     <div id="app" v-cloak></div>
+    <script src="./dist/vendor.js"></script>
     <script type="module" src="./app.js"></script>
     <script nomodule src="./dist/bundle.js"></script>
 </body>
