@@ -1,4 +1,4 @@
-import routes from "./routes.js";
+import routes from "./routes/routes.js";
 const router = new VueRouter({
     mode: "history",
     routes // short for `routes: routes`

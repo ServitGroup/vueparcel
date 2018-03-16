@@ -1,5 +1,8 @@
+import Logo from "../components/Logo.js";
 export default {
-    template: `<h1>Home test</h1>`,
+    template: `<div><h1>Home test</h1>
+        <Logo />
+    </div>`,
     name: "Home",
     mixins: [],
     data() {
@@ -13,5 +16,8 @@ export default {
     },
     mounted() {},
     methods: {},
-    computed: {}
+    computed: {},
+    components: {
+        Logo
+    }
 };
