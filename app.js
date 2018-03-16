@@ -1,13 +1,4 @@
-const Foo = { template: "<div>foo</div>" };
-const Bar = { template: "<div>bar</div>" };
-const Home = () =>
-    import ("./Home.js");
-const routes = [
-    { path: "/foo", component: Foo },
-    { path: "/bar", component: Bar },
-    { path: "/home", component: Home }
-];
-
+import routes from "./routes.js";
 const router = new VueRouter({
     routes // short for `routes: routes`
 });
