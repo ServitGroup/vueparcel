@@ -11,12 +11,15 @@
     "scripts": {
         "build": "parcel build ./app.js -o ./dist/bundle.js",
         "build:bundle": "parcel build ./app.js -o ./dist/bundle.js",
-        "build:vendor": "parcel build ./vendor.js"
+        "build:vendor": "parcel build ./vendor.js",
+        "serv": "live-server"
     },
     "dependencies": {
         "axios": "^0.18.0",
         "collect.js": "^4.0.12",
         "jquery": "^3.3.1",
+        "live-server": "^1.2.0",
+        "parcel-bundler": "^1.6.2",
         "tachyons": "4.9.1",
         "vue": "^2.5.16",
         "vue-multianalytics": "^1.9.2",
