@@ -1,9 +1,11 @@
 const Foo = { template: "<div>foo</div>" };
 const Bar = { template: "<div>bar</div>" };
-
+const Home = () =>
+    import ("./Home.js");
 const routes = [
     { path: "/foo", component: Foo },
-    { path: "/bar", component: Bar }
+    { path: "/bar", component: Bar },
+    { path: "/home", component: Home }
 ];
 
 const router = new VueRouter({
@@ -31,6 +33,7 @@ window.vm = new Vue({
         <p>
             <router-link to = "/foo" > Go to Foo </router-link> 
             <router-link to = "/bar" > Go to Bar </router-link> 
+            <router-link to = "/home" > Go to Home </router-link> 
             </p>
             <router-view></router-view> 
     </div>`,
