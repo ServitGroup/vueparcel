@@ -1,6 +1,6 @@
 export default {
-    template: `<h1>Home test</h1>`,
-    name: "Home",
+    template: `<h1>About</h1>`,
+    name: "About",
     mixins: [],
     data() {
         return {

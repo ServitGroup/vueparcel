@@ -21,13 +21,15 @@ window.vm = new Vue({
     router,
     template: `
     <div id="app">
-        <h1>Hello App!</h1>
         <p>
-            <router-link to = "/foo" > Go to Foo </router-link> 
-            <router-link to = "/bar" > Go to Bar </router-link> 
-            <router-link to = "/home" > Go to Home </router-link> 
-            </p>
-            <router-view></router-view> 
+            <h1>Hello App!</h1>
+            <router-link to = "/home" > Go to Home </router-link><br/>
+            <router-link to = "/contact" > Go to Contact </router-link><br/>
+            <router-link to = "/bar" > Go to Bar </router-link><br/>
+            <router-link to = "/foo" > Go to Foo </router-link><br/>
+            <router-link to = "/about" > Go to About </router-link><br/>
+        </p>
+        <router-view></router-view> 
     </div>`,
     created() {
         console.log("vue create", this);
