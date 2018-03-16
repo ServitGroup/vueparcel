@@ -1,0 +1,12 @@
+import Vue from "./node_modules/vue/dist/vue.esm.browser.js";
+window.Vue = Vue;
+import collect from "collect.js";
+import Vuex from "vuex";
+window.Vuex = Vuex;
+import axios from "axios";
+import ("vue-multianalytics");
+import ("vue-router");
+Vue.prototype.$http = axios;
+Vue.prototype.$collect = collect;
+Vue.use(Vuex);
+import ("tachyons");
