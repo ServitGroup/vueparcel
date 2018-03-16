@@ -17,7 +17,6 @@
         "axios": "^0.18.0",
         "collect.js": "^4.0.12",
         "jquery": "^3.3.1",
-        "parcel": "^0.0.1",
         "tachyons": "4.9.1",
         "vue": "^2.5.16",
         "vue-multianalytics": "^1.9.2",
