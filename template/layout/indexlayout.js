@@ -10,6 +10,7 @@ export default {
     <HelloWorld />
     <Navbarpage/>
     <router-view><Home/></router-view> 
+    <b>power by: thongchai lim and tanangular</b>
     <Footerpage />
     </div>`,
     name: "Main",
