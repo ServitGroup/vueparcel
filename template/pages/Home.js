@@ -1,5 +1,9 @@
+import Counter from "../components/Counter.js"
 export default {
-    template: `<div><h1>Home Page</h1></div>`,
+    template: `<div><h1>Home Page</h1>
+    
+        <Counter />
+    </div>`,
     name: "Home",
     mixins: [],
     data() {
@@ -14,5 +18,8 @@ export default {
     mounted() {},
     methods: {},
     computed: {},
-    components: {}
+    components: {
+        Counter
+
+    }
 };

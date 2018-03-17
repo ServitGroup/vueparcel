@@ -1,9 +1,17 @@
 import Vue from "./node_modules/vue/dist/vue.esm.browser.js";
 window.Vue = Vue;
+
 import collect from "collect.js";
+Vue.prototype.$collect = collect;
+
 import Vuex from "vuex";
 window.Vuex = Vuex;
+Vue.use(Vuex);
+
 import axios from "axios";
+window.axios = axios;
+Vue.prototype.$http = axios;
+
 import VueMultianalytics from "vue-multianalytics";
 let gaConfig = {
     appName: "Test", // Mandatory
@@ -24,7 +32,8 @@ Vue.use(VueMultianalytics, {
 import VueRouter from "vue-router";
 window.VueRouter = VueRouter;
 Vue.use(VueRouter);
-Vue.prototype.$http = axios;
-Vue.prototype.$collect = collect;
-Vue.use(Vuex);
+
 import ("tachyons");
+
+import { sync } from "vuex-router-sync";
+Vue._sync = sync;

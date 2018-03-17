@@ -1,5 +1,5 @@
 export default {
-    template: `<div><slot>Header</slot></div>`,
+    template: `<div><slot>Header</slot>}<b>{{$store.state.user.username||'User'}}</b></div>`,
     name: "Header",
     mixins: [],
     data() {

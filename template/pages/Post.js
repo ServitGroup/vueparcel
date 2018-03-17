@@ -12,7 +12,10 @@ export default {
         </thead>
         <tbody>
             <tr v-for="post in posts">
-                <td v-for="col in Object.keys(post)" class="pv3 pr3 bb b--black-20">{{post[col]}}</td>
+                <td v-for="key in Object.keys(post)" class="pv3 pr3 bb b--black-20">{{post[key]}}</td>
+                <td class="pv3 pr3 bb b--black-20">{{post.id}}</td>
+                <td class="pv3 pr3 bb b--black-20">{{post.title}}</td>
+                <td class="pv3 pr3 bb b--black-20">{{post.author}}</td>
                 <td>
                 <a href="#">add</a>
                 |
