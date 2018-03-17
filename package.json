@@ -9,8 +9,8 @@
         "url": "https://github.com/parcel-bundler/parcel.git"
     },
     "scripts": {
-        "build": "parcel build ./app.js -o ./dist/bundle.js",
-        "build:bundle": "parcel build ./app.js -o ./dist/bundle.js",
+        "build": "parcel build ./main.js -o ./dist/bundle.js",
+        "build:bundle": "parcel build ./main.js -o ./dist/bundle.js",
         "build:vendor": "parcel build ./vendor.js",
         "serv": "live-server"
     },
@@ -18,8 +18,10 @@
         "axios": "^0.18.0",
         "collect.js": "^4.0.12",
         "jquery": "^3.3.1",
+        "json-server": "^0.12.1",
         "live-server": "^1.2.0",
         "parcel-bundler": "^1.6.2",
+        "postcss-modules": "^1.1.0",
         "tachyons": "4.9.1",
         "vue": "^2.5.16",
         "vue-multianalytics": "^1.9.2",

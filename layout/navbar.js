@@ -4,6 +4,7 @@ export default {
     <b>Navbar</b>
     <p>
     <router-link to = "/home" > <b>Home</b> </router-link>|
+    <router-link to = "/posts" > <b>Post</b> </router-link>|
     <router-link to = "/bar" > <b>Bar</b> </router-link>|
     <router-link to = "/foo" > <b>Foo</b> </router-link>|
     <router-link to = "/contact" > <b>Contact</b> </router-link>|
