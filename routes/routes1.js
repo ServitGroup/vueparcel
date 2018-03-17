@@ -1,8 +1,8 @@
 const Foo = {
-    template: "<div>foo</div>"
+    template: "<div><h1>foo</h1></div>"
 };
 const Bar = {
-    template: "<div>bar</div>"
+    template: "<div><h1>bar</h1></div>"
 };
 
 const routes = [
