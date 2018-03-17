@@ -1,4 +1,5 @@
 import api from "../api/api.js";
+import router from "../routes/router.js";
 export default {
     namespaced: true,
     state: {
@@ -19,7 +20,7 @@ export default {
                 .then(rs => {
                     console.log("logined->", rs);
                     if (rs.data.length > 0) {
-                        vm.$router.push("/");
+                        router.push("/");
                         ctx.commit("login", rs.data[0]);
                     }
                 })

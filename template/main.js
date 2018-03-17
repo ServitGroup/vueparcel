@@ -1,11 +1,7 @@
 import App from "./pages/app.js";
-import routes from "./routes/routes.js";
 import store from "./stores/index.js";
 import eventBus from "./utils/eventBus.js";
-const router = new VueRouter({
-    mode: "history",
-    routes // short for `routes: routes`
-});
+import router from "./routes/router.js";
 
 const unsync = Vue._sync(store, router); // done. Returns an unsync callback fn
 
