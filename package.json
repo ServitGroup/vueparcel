@@ -2,7 +2,7 @@
     "name": "web-vue-parcel-bundler",
     "version": "0.0.1",
     "description": "vuejs web type type browser module support with parcel build build and vendor",
-    "main": "app.js",
+    "main": "main.js",
     "license": "MIT",
     "repository": {
         "type": "git",

@@ -1,5 +1,5 @@
 export default {
-    template: `<div><slot>Footer</slot></div>`,
+    template: `<div><hr/><slot>Footer</slot></div>`,
     name: "Footer",
     mixins: [],
     data() {

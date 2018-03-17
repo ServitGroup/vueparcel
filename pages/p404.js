@@ -1,5 +1,5 @@
 export default {
-    template: `<h1>404</h1>`,
+    template: `<h1 style="cursor:pointer" @click="home">404</h1>`,
     name: "NotFoundView",
     mixins: [],
     data() {
@@ -12,6 +12,10 @@ export default {
         console.log("vc computer is created");
     },
     mounted() {},
-    methods: {},
+    methods: {
+        home() {
+            this.$router.push("/");
+        }
+    },
     computed: {}
 };

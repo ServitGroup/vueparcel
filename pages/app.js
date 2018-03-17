@@ -1,5 +1,5 @@
 export default {
-    template: `<router-view></router-view>`,
+    template: `<center><router-view></router-view></center>`,
     name: "Mainrouterview",
     mixins: [],
     data() {

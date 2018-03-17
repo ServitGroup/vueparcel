@@ -3,7 +3,7 @@ import route2 from "./routes2.js";
 import Indexlayout from "../layout/indexlayout.js";
 import Login from "../pages/Login.js";
 import NotFoundView from "../pages/p404.js";
-
+import Home from "../pages/Home.js"; //lazy load
 const route3 = [{
         path: "/login",
         component: Login
@@ -11,7 +11,15 @@ const route3 = [{
     {
         path: "/",
         component: Indexlayout,
-        children: [...route1, ...route2]
+        children: [{
+                path: "home",
+                alias: "", // for default Component view
+                name: "home",
+                component: Home
+            },
+            ...route2,
+            ...route1
+        ]
     },
     {
         path: "*",

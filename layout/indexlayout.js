@@ -1,12 +1,15 @@
 import Headerpage from "./header.js";
 import Footerpage from "./footer.js";
 import Navbarpage from "./navbar.js";
-
+import HelloWorld from "../components/HelloWorld.js";
+import Logo from "../components/Logo.js";
 export default {
     template: `<div>
     <Headerpage>Index layout MyHeader Override</Headerpage>
+    <Logo />
+    <HelloWorld />
     <Navbarpage/>
-    <router-view></router-view> 
+    <router-view><Home/></router-view> 
     <Footerpage />
     </div>`,
     name: "Main",
@@ -26,6 +29,8 @@ export default {
     components: {
         Headerpage,
         Navbarpage,
-        Footerpage
+        Footerpage,
+        HelloWorld,
+        Logo
     }
 };

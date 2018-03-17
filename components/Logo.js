@@ -1,5 +1,5 @@
 export default {
-    template: `<div><img src="/img/logo.png" /></div>`,
+    template: `<div><img src="/assets/logo.png" /></div>`,
     name: "Logo",
     mixins: [],
     data() {

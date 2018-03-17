@@ -6,8 +6,8 @@ const Bar = {
 };
 
 const routes = [
-    { path: "/bar", component: Bar },
-    { path: "/foo", component: Foo }
+    { path: "bar", component: Bar },
+    { path: "foo", component: Foo }
 ];
 
 export default routes;
