@@ -1,5 +1,3 @@
-const Home = () =>
-    import ("../pages/Home.js"); //lazy load
 import Contact from "../pages/Contact.js";
 const routes = [{
         path: "contact",
