@@ -3,14 +3,17 @@ import Footerpage from "./footer.js";
 import Navbarpage from "./navbar.js";
 import HelloWorld from "../components/HelloWorld.js";
 import Logo from "../components/Logo.js";
+import powerby from "../components/powerby.js";
+import overlay from "../components/overlay.js";
 export default {
     template: `<div>
+    <overlay/>
     <Headerpage>Index layout MyHeader Override</Headerpage>
     <Logo />
     <HelloWorld />
     <Navbarpage/>
     <router-view><Home/></router-view> 
-    <b>power by: thongchai lim and tanangular</b>
+    <powerby/>
     <Footerpage />
     </div>`,
     name: "Main",
@@ -32,6 +35,8 @@ export default {
         Navbarpage,
         Footerpage,
         HelloWorld,
-        Logo
+        Logo,
+        powerby,
+        overlay
     }
 };

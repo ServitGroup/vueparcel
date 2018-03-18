@@ -13,5 +13,6 @@ export default {
     },
     mounted() {},
     methods: {},
-    computed: {}
+    computed: {},
+    components: {}
 };
