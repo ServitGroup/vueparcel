@@ -1,7 +1,9 @@
+import mixistemplate from "../mixins/mixintemplate.js";
+import crudmixin from "../mixins/mixincrud.js"
 export default {
     template: `<h1>About</h1>`,
     name: "About",
-    mixins: [],
+    mixins: [mixistemplate, crudmixin],
     data() {
         return {
             theme: "AdminLte"

@@ -1,3 +1,4 @@
+import mixintemplate from "../mixins/mixintemplate.js";
 export default {
     template: `<section class="vh-100 bg-washed-blue baskerville">
   <header class="tc ph5 lh-copy">
@@ -15,7 +16,7 @@ export default {
   </ul>
 </section>`,
     name: "NotFoundView",
-    mixins: [],
+    mixins: [mixintemplate],
     data() {
         return {
             theme: "AdminLte"
