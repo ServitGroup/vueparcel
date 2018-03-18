@@ -37,3 +37,13 @@ import ("tachyons");
 
 import { sync } from "vuex-router-sync";
 Vue._sync = sync;
+
+import Storage from "vue-ls";
+
+let options = {
+    namespace: "vuejs__", // key prefix
+    name: "ls", // name variable Vue.[ls] or this.[$ls],
+    storage: "local" // storage name session, local, memory
+};
+
+Vue.use(Storage, options);
