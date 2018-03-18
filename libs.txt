@@ -1,0 +1,7 @@
+https://github.com/vuejs/awesome-vue
+https://github.com/mblarsen/browser-acl
+https://github.com/mblarsen/vue-browser-acl
+https://codeburst.io/reusable-vue-directives-v-can-753bf54e563f
+https://leonardovilarinho.github.io/vue-acl/
+https://github.com/ValueFE/vue-permission
+https://github.com/dgrubelic/vue-authorize

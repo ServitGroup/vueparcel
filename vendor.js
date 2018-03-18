@@ -38,6 +38,9 @@ import ("tachyons");
 import { sync } from "vuex-router-sync";
 Vue._sync = sync;
 
+import createPersistedState from "vuex-persistedstate";
+Vue._createPersistedState = createPersistedState;
+
 import Storage from "vue-ls";
 
 let options = {
@@ -47,3 +50,14 @@ let options = {
 };
 
 Vue.use(Storage, options);
+
+import Cookies from "js-cookie";
+Vue.prototype.$cookies = Cookies;
+
+import VueProgressBar from "vue-progressbar";
+
+Vue.use(VueProgressBar, {
+    color: "rgb(143, 255, 199)",
+    failedColor: "red",
+    height: "2px"
+});

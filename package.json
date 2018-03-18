@@ -19,6 +19,7 @@
         "axios": "^0.18.0",
         "collect.js": "^4.0.12",
         "jquery": "^3.3.1",
+        "js-cookie": "^2.2.0",
         "json-server": "^0.12.1",
         "live-server": "^1.2.0",
         "parcel-bundler": "^1.6.2",
@@ -27,8 +28,10 @@
         "vue": "^2.5.16",
         "vue-ls": "^3.0.0",
         "vue-multianalytics": "^1.9.2",
+        "vue-progressbar": "^0.7.4",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1",
+        "vuex-persistedstate": "^2.5.1",
         "vuex-router-sync": "^5.0.0"
     }
 }

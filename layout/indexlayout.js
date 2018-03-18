@@ -8,12 +8,13 @@ import overlay from "../components/overlay.js";
 export default {
     template: `<div>
     <overlay/>
+    <vue-progress-bar></vue-progress-bar>
     <Headerpage>Index layout MyHeader Override</Headerpage>
     <Logo />
     <HelloWorld />
     <Navbarpage/>
     <router-view><Home/></router-view> 
-    <powerby/>
+    <powerby/><br/>
     <Footerpage />
     </div>`,
     name: "Main",

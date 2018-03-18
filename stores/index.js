@@ -3,6 +3,7 @@ import module2 from "./module2.js";
 import user from "./user.js";
 const store = new Vuex.Store({
     namespaced: true,
+    plugins: [Vue._createPersistedState()],
     state: {
         count: 0,
         overlay: "block"
