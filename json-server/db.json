@@ -14,5 +14,11 @@
             "isAdmin": 0,
             "name": "Thongchai L"
         }
-    ]
+    ],
+    "crudmodule": {
+        "state": {
+            "data": [{ "a": "aaa", "a": "bbbb" }],
+            "cols": [{ "label": "A", "key": "a" }]
+        }
+    }
 }

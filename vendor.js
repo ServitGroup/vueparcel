@@ -61,3 +61,6 @@ Vue.use(VueProgressBar, {
     failedColor: "red",
     height: "2px"
 });
+
+import vSelect from "vue-select";
+Vue._vSelect = vSelect;

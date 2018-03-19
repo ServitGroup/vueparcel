@@ -1,5 +1,12 @@
 export default {
-    template: `<H1>contact</H1>`,
+    template: `<div><H1>contact</H1>
+    <hr/>
+    <v-select print-exclude v-model="selected" :options="['foo','bar']"></v-select>
+    <hr/>
+    <v-print>test</v-print>
+    <br/>
+    <input type="button" value="print" @click="this.print" />
+    </div>`,
     name: "Contact",
     beforeRouteEnter(to, from, next) {
         console.log("route เข้า component ", this);
@@ -38,7 +45,8 @@ export default {
     mixins: [],
     data() {
         return {
-            theme: "AdminLte"
+            theme: "AdminLte",
+            selected: ""
         };
     },
     created() {

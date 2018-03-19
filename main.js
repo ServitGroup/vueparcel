@@ -2,6 +2,7 @@ import App from "./pages/app.js";
 import store from "./stores/index.js";
 import eventBus from "./utils/eventBus.js";
 import router from "./routes/router.js";
+import vueprint from "./components/vueprint.js";
 
 const unsync = Vue._sync(store, router); // done. Returns an unsync callback fn
 
@@ -27,6 +28,9 @@ router.onError(err => {
 });
 
 Vue.prototype.$bus = eventBus;
+
+Vue.component("v-select", Vue._vSelect);
+vueprint(Vue);
 
 window.vm = new Vue({
     el: "#app",
