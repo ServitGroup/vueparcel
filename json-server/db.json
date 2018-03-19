@@ -16,7 +16,11 @@
         }
     ],
     "crudmodule": {
+        "namespaced": true,
+        "name": "aa",
         "state": {
+            "count": 0,
+            "name": "aa",
             "data": [{ "a": "aaa", "a": "bbbb" }],
             "cols": [{ "label": "A", "key": "a" }]
         }

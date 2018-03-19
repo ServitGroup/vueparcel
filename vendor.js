@@ -52,6 +52,7 @@ let options = {
 Vue.use(Storage, options);
 
 import Cookies from "js-cookie";
+Vue._Cookies = Cookies;
 Vue.prototype.$cookies = Cookies;
 
 import VueProgressBar from "vue-progressbar";

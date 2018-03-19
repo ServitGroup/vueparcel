@@ -3,7 +3,16 @@ import module2 from "./module2.js";
 import user from "./user.js";
 const store = new Vuex.Store({
     namespaced: true,
-    plugins: [Vue._createPersistedState()],
+    plugins: [
+        Vue._createPersistedState({
+            storage: {
+                getItem: key => Vue._Cookies.get(key),
+                setItem: (key, value) =>
+                    Vue._Cookies.set(key, value, { expires: 3, secure: true }),
+                removeItem: key => Vue._Cookies.remove(key)
+            }
+        })
+    ],
     state: {
         count: 0,
         overlay: "block"
