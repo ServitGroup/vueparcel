@@ -46,13 +46,19 @@ export default {
     created() {
         window.vc = this;
         console.log("vc computer is created");
-        this.$http
-            .get("http://localhost:3000/posts")
-            .then(rs => {
-                console.log(rs.data);
-                this.posts = rs.data;
-            })
-            .catch(console.log);
+        const getdata = async() => {
+            let postget = await this.$http.get("http://localhost:3000/posts");
+            this.posts = postget.data;
+        };
+        getdata();
+        //  then catch
+        //    this.$http
+        //         .get("http://localhost:3000/posts")
+        //         .then(rs => {
+        //             console.log(rs.data);
+        //             this.posts = rs.data;
+        //         })
+        //         .catch(console.log);
     },
     mounted() {},
     methods: {},
