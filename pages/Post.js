@@ -48,7 +48,10 @@ export default {
         console.log("vc computer is created");
         const getdata = async() => {
             let postget = await this.$http.get("http://localhost:3000/posts");
+            let commget = await this.$http.get("http://localhost:3000/comments");
             this.posts = postget.data;
+            this.comments = commget.data;
+            console.log(this.posts, this.comments);
         };
         getdata();
         //  then catch
